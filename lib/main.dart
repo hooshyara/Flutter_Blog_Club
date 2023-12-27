@@ -78,6 +78,10 @@ class MyApp extends StatelessWidget {
               color: primaryTextColor,
               fontWeight: FontWeight.w700,
             ),
+            bodyText1: TextStyle(
+                fontFamily: FontFamily.avenir,
+                color: primaryTextColor,
+                fontSize: 14),
             bodyText2: TextStyle(
                 fontFamily: FontFamily.avenir,
                 color: secondaryTextColor,

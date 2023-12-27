@@ -5,7 +5,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'article.dart';
 import 'gen/assets.gen.dart';
 import 'onboarding.dart';
-
+import 'profile.dart';
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
@@ -19,7 +19,7 @@ class _SplashScreenState extends State<SplashScreen> {
     Future.delayed(Duration(seconds: 2)).then((value) {
       Navigator.of(context).pushReplacement(
         CupertinoPageRoute(
-          builder: (context) => ArticleScreen(),
+          builder: (context) => ProfileScreen(),
         ),
       );
     });

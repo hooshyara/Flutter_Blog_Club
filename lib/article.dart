@@ -169,8 +169,8 @@ class ArticleScreen extends StatelessWidget {
             Positioned(
               bottom: 0,
               child: Container(
-                // width: MediaQuery.of(context).size.width,
-                width: double.infinity,
+                width: MediaQuery.of(context).size.width,
+                // width: double.infinity,
                 height: 116,
                 decoration: BoxDecoration(
                     gradient: LinearGradient(
