@@ -132,28 +132,60 @@ const int searchScreen = 2;
 const int profileScreen = 3;
 
 class _MainScreenState extends State<MainScreen> {
+  final List<int> _history = [];
   int selectedScreenIndex = 0;
+  GlobalKey<NavigatorState> _homeKey=GlobalKey();
+  GlobalKey<NavigatorState> _articleKey=GlobalKey();
+  GlobalKey<NavigatorState> _searchKey=GlobalKey();
+  GlobalKey<NavigatorState> _profileKey=GlobalKey();
+
+  late final map = {
+    homeScreen : _homeKey,
+    articleScreen:_articleKey,
+    profileScreen:_profileKey,
+    searchScreen:_searchKey,
+  };
+
+  Future<bool> _onWillPop()async{
+    final NavigatorState currentSelectedTabNavigatorState= map[selectedScreenIndex]!.currentState!;
+    if(currentSelectedTabNavigatorState.canPop()){
+      currentSelectedTabNavigatorState.pop();
+      return false;
+    }else if(_history.isNotEmpty){
+      setState(() {
+        selectedScreenIndex=_history.last;
+        _history.removeLast();
+      });
+      return false;
+    };
+    return true;
+  }
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    return Scaffold(
-      bottomNavigationBar: _BottomNavigation(
-        selectedIndex: selectedScreenIndex,
-        onTap: (int index) {
-          setState(() {
-            selectedScreenIndex = index;
-          });
-        },
-      ),
-      body: IndexedStack(
-        index: selectedScreenIndex,
-        children: [
-          HomeScreen(),
-          ArticleScreen(),
-          SearchScreen(),
-          ProfileScreen(),
-        ],
+    return WillPopScope(
+      onWillPop: () => _onWillPop(),
+      child: Scaffold(
+        bottomNavigationBar: _BottomNavigation(
+          selectedIndex: selectedScreenIndex,
+          onTap: (int index) {
+            setState(() {
+              _history.remove(selectedScreenIndex);
+              _history.add(selectedScreenIndex);
+              selectedScreenIndex = index;
+            });
+          },
+        ),
+        body: IndexedStack(
+          index: selectedScreenIndex,
+          children: [
+            Navigator(key: _homeKey,onGenerateRoute: (setting)=>CupertinoPageRoute(builder: (context) => HomeScreen(),),),
+            Navigator(key:_articleKey,onGenerateRoute: (setting)=>CupertinoPageRoute(builder: (context) => ArticleScreen(),),),
+            Navigator( key: _searchKey,onGenerateRoute: (setting)=>CupertinoPageRoute(builder: (context) => SearchScreen(),),),
+            Navigator(key: _profileKey, onGenerateRoute: (setting)=>CupertinoPageRoute(builder: (context) => ProfileScreen() ,),),
+
+          ],
+        ),
       ),
     );
   }
