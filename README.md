@@ -5,17 +5,20 @@ A new Flutter project.
 ## Getting Started
 
 This project is a starting point for a Flutter application.
-![article](https://github.com/hooshyara/Flutter_Blog_Club/assets/149066719/49988e66-24ff-4b20-a8c3-d90625211c11)
-![article2jpg](https://github.com/hooshyara/Flutter_Blog_Club/assets/149066719/7e3fca44-e8da-4377-9211-4d6b982032a7)
-![signup](https://github.com/hooshyara/Flutter_Blog_Club/assets/149066719/ab7ec4e1-7171-4788-af0f-8b7aa1af6207)
-![signup](https://github.com/hooshyara/Flutter_Blog_Club/assets/149066719/3599df9f-b38f-4ede-93a6-3c1af117453f)
-![signup](https://github.com/hooshyara/Flutter_Blog_Club/assets/149066719/e13e827f-f47e-4b20-90c0-b58df6f90fb0)
-![signup](https://github.com/hooshyara/Flutter_Blog_Club/assets/149066719/a9cddea7-615e-4a69-9a2b-1e8db0ac7daa)
-![signup](https://github.com/hooshyara/Flutter_Blog_Club/assets/149066719/3b27ee08-d500-49da-9bd7-68b053b2c771)
-![signup](https://github.com/hooshyara/Flutter_Blog_Club/assets/149066719/47d055c0-7c87-425b-b7fd-4ac6e7c9d84d)
-![signup](https://github.com/hooshyara/Flutter_Blog_Club/assets/149066719/db685b75-9e07-4eaf-8825-5fac9be8ec78)
+![article](https://github.com/hooshyara/Flutter_Blog_Club/assets/149066719/c8aff166-50ea-4d09-b743-ca195d7f752b)
+![article2jpg](https://github.com/hooshyara/Flutter_Blog_Club/assets/149066719/b83e111d-7a69-4b9b-831c-a92f438db3b5)
+![home](https://github.com/hooshyara/Flutter_Blog_Club/assets/149066719/a9ad9118-0d81-4d1a-8f68-8c3ac988254b)
+![home2](https://github.com/hooshyara/Flutter_Blog_Club/assets/149066719/86cbc423-70c6-4d45-9f0d-8450cd69316b)
+![home3](https://github.com/hooshyara/Flutter_Blog_Club/assets/149066719/8a2740f6-efc0-46d4-8581-a7e891b9bfbc)
+![login](https://github.com/hooshyara/Flutter_Blog_Club/assets/149066719/4e4d70e4-eee0-4407-b225-43225140e570)
+![onboarding](https://github.com/hooshyara/Flutter_Blog_Club/assets/149066719/64633249-2439-4065-a911-6c36d40f7997)
+![onboarding2](https://github.com/hooshyara/Flutter_Blog_Club/assets/149066719/e6f9f6fa-8333-49a5-ac2e-668726c73e78)
+![profile](https://github.com/hooshyara/Flutter_Blog_Club/assets/149066719/3faa41b5-b4c5-4108-9d44-3fb09d69b1b6)
+![signup](https://github.com/hooshyara/Flutter_Blog_Club/assets/149066719/9a57f62a-9075-4828-a270-a3470a6dc7a4)
 
-![signup](https://github.com/hooshyara/Flutter_Blog_Club/assets/149066719/65f7c2ce-e058-4cf4-a745-4d481240bacc)
+
+
+
 
 
 
